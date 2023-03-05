@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "translateThenSearch",
+  "version": "1.0",
+  "description": "一键把中文翻译成英文，然后搜索",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "css": [
+        "scripts/content.css"
+      ],
+      "matches": [
+        "https://www.google.com.hk/*",
+        "https://www.google.com/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://gke-goole-translation-service-n3bw52mqjq-as.a.run.app/*"
+  ],
+  "commands": {
+    "translate-then-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+1",
+        "mac": "Command+Shift+1"
+      },
+      "description": "把搜索框中的中文翻译成英文，再用google搜索"
+    }
+  }
+}
