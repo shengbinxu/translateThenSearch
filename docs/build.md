@@ -12,7 +12,7 @@ cd translateThenSearch && zip -r "$OLDPWD/package.zip" . -x .git/\*
 
 地区选择的是“香港”，这里的地区可以不是银行卡归属的地区。“地址”去网上搜一个香港真实存在的地址就可以。
 
-## 2、应用提交到商店，审核通过发布到应用商店，我安装时竟然抱错了。
+## 2、应用审核通过发布到应用商店，我安装时竟然抱错了。
 
 <img width="1313" alt="image" src="https://user-images.githubusercontent.com/3232275/223070297-a04fe57b-85e8-4522-9505-c59b57d4aeb4.png">
 
