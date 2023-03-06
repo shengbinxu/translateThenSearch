@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "translateThenSearch",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "一键把中文翻译成英文，然后搜索",
   "icons": {
     "16": "images/icon-16.png",

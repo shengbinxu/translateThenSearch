@@ -5,5 +5,5 @@ This is a chrome extension to translate Chinese into English, and then search in
 
 # 打包方式
 ```
-cd translateThenSearch && zip -r "$OLDPWD/package.zip" .
+cd translateThenSearch && zip -r "$OLDPWD/package.zip" . -x .git/\*
 ```
