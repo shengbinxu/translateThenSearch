@@ -16,7 +16,7 @@ https://chrome.google.com/webstore/detail/translatethensearch/gbhpnblnkejfmglmij
 ## v1.0.1
 支持一键把google search输入框中的中文翻译成英文，并自动触发搜索。
 唤起该功能的方式：
-1. google 搜索框输入中文之后，按下快捷键，一键完成翻译后搜索功能。
+1. google 搜索（目前仅支持www.google.com.hk、www.google.com）框输入中文之后，按下快捷键，一键完成翻译后搜索功能。
 
 2. google 搜索框输入中文之后，光标选中输入框文字，右键菜单，选择”翻译后英文再搜“，一键完成翻译、并搜索。
 <img width="772" alt="image" src="https://user-images.githubusercontent.com/3232275/223068773-eac0505f-c3ef-4117-80ce-0db56f405e47.png">
