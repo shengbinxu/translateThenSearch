@@ -22,3 +22,8 @@ https://chrome.google.com/webstore/detail/translatethensearch/gbhpnblnkejfmglmij
 <img width="772" alt="image" src="https://user-images.githubusercontent.com/3232275/223068773-eac0505f-c3ef-4117-80ce-0db56f405e47.png">
 
 插件安装之后，访问google(目前仅支持www.google.com.hk、www.google.com)，就可以体验了。
+
+
+# 后续规划
+
+1. 支持在浏览器地址栏中触发翻译后再搜索
