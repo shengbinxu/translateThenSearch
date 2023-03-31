@@ -25,6 +25,8 @@ https://chrome.google.com/webstore/detail/translatethensearch/gbhpnblnkejfmglmij
 
 ## v1.1
 支持google bard输入框翻译后再搜。
+<img width="1062" alt="image" src="https://user-images.githubusercontent.com/3232275/229004221-d6a560f7-8472-40ae-87d3-e8fcc430343a.png">
+
 
 
 # 后续规划
