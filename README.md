@@ -23,6 +23,9 @@ https://chrome.google.com/webstore/detail/translatethensearch/gbhpnblnkejfmglmij
 
 插件安装之后，访问google(目前仅支持www.google.com.hk、www.google.com)，就可以体验了。
 
+## v1.1
+支持google bard输入框翻译后再搜。
+
 
 # 后续规划
 
