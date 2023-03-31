@@ -19,7 +19,8 @@
       ],
       "matches": [
         "https://www.google.com.hk/*",
-        "https://www.google.com/*"
+        "https://www.google.com/*",
+        "https://bard.google.com/*"
       ],
       "run_at": "document_end"
     }

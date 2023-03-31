@@ -7,13 +7,22 @@
 
 chrome.runtime.onMessage.addListener(
   function (request, sender, sendResponse) {
+    if (location.href.startsWith("https://bard.google.com")) {
+      var searchInput = document.getElementsByTagName('textarea')[0];
+    } else {
+      var searchInput = document.getElementsByTagName("input")[0];      
+    }
     if (request.functiontoInvoke == 'translateThenSearch') {
-      let googleSearchInput = document.querySelector(`[aria-label="Search"]`);
-      googleSearchInput.value = request.en;
-      document.querySelector(`[role="search"]`).submit();
+      if (location.href.startsWith("https://bard.google.com")) {
+        searchInput.value = request.en;
+        searchInput.dispatchEvent(new Event('input'))
+        document.querySelector(`[mattooltip="Submit"]`).click();
+      } else {
+        searchInput.value = request.en;
+        document.querySelector(`[role="search"]`).submit();
+      }
     } else if (request.functiontoInvoke == 'getSearchInputValue') {
-      let googleSearchInput = document.querySelector(`[aria-label="Search"]`);
-      sendResponse({"searchInputValue" : googleSearchInput.value});
+      sendResponse({"searchInputValue" : searchInput.value});
     }
   }
 );
