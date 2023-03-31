@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "translateThenSearch",
-  "version": "1.0.1",
+  "version": "1.1",
   "description": "一键把中文翻译成英文，然后搜索",
   "icons": {
     "16": "images/icon-16.png",
@@ -41,7 +41,7 @@
         "default": "Ctrl+Shift+1",
         "mac": "Command+Shift+1"
       },
-      "description": "把搜索框中的中文翻译成英文，再用google搜索"
+      "description": "把搜索框中的中文翻译成英文，再用google、bard搜索"
     }
   }
 }
