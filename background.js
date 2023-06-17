@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     "id": "translationContextMenu",
-    "title": "翻译成英文再搜",
+    "title": "translateThenSearch",
     "contexts": ["selection"]
   });
 });
@@ -15,7 +15,7 @@ chrome.contextMenus.onClicked.addListener(function (clickData) {
 });
 
 function translateThenSearch(input) {
-  fetch("https://gke-goole-translation-service-n3bw52mqjq-as.a.run.app/translation?term=" + encodeURIComponent(input), {
+  fetch("http://124.220.81.24:8080/to-en?text=" + input, {
     method: "GET", // or 'PUT'
     headers: {
       "Content-Type": "application/json"
@@ -31,7 +31,7 @@ function translateThenSearch(input) {
         function (tabs) {
           chrome.tabs.sendMessage(tabs[0].id, {
             "functiontoInvoke": "translateThenSearch",
-            "en": response.text
+            "en": response[0].translations[0].text
           });
         }
       );

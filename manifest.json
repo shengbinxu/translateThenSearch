@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "translateThenSearch",
-  "version": "1.1",
-  "description": "一键把中文翻译成英文，然后搜索",
+  "version": "1.2",
+  "description": "Translate query into English with one click and search",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
@@ -33,7 +33,7 @@
     "service_worker": "background.js"
   },
   "host_permissions": [
-    "https://gke-goole-translation-service-n3bw52mqjq-as.a.run.app/*"
+    "http://124.220.81.24:8080"
   ],
   "commands": {
     "translate-then-search": {
